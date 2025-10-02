@@ -70,3 +70,21 @@ Praktikum 3: Implementasi text section
 <br> 2. Tambahkan widget variabel textSection ke dalam body seperti berikut:
 
 ![Screenshot flutter_layout](images/10.png)
+
+Praktikum 4: Implementasi image section
+<br> 1. Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder images di root project layout_flutter. Masukkan file gambar tersebut ke folder images, lalu set nama file tersebut ke file pubspec.yaml seperti berikut:
+
+![Screenshot flutter_layout](images/11.png)
+Contoh nama file gambar di atas adalah lake.jpg
+
+<br> 2. Tambahkan aset gambar ke dalam body seperti berikut:
+
+![Screenshot flutter_layout](images/12.png)
+BoxFit.cover memberi tahu kerangka kerja bahwa gambar harus sekecil mungkin tetapi menutupi seluruh kotak rendernya.
+
+<br> 3. Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karena ListView mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.
+
+![Screenshot flutter_layout](images/13.png)
+
+Output
+![Screenshot flutter_layout](images/14.png)

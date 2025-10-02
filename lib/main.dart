@@ -81,8 +81,15 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Column(
+        body: ListView( // Praktikum 4: Implementasi image section //Langkah 3: Terakhir, ubah menjadi ListView
+          // Praktikum 4: Implementasi image section // Langkah 2: Tambahkan gambar ke body
           children: [
+            Image.asset(
+              'images/bromo.png',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection,  // Praktikum 2: Implementasi button row // Langkah 3: Tambah button section ke body
             textSection, // Praktikum 3: Implementasi text section // Langkah 2: Tambahkan variabel text section ke body
