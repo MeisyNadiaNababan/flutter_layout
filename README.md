@@ -60,3 +60,13 @@ Output Kode
 <br> 3. Tambahkan variabel buttonSection ke dalam body seperti berikut:
 
 ![Screenshot flutter_layout](images/08.png)
+
+Praktikum 3: Implementasi text section
+<br> 1. Tentukan bagian teks sebagai variabel. Masukkan teks ke dalam Container dan tambahkan padding di sepanjang setiap tepinya. Tambahkan kode berikut tepat di bawah deklarasi buttonSection:
+
+![Screenshot flutter_layout](images/09.png)
+<br> Dengan memberi nilai softWrap = true, baris teks akan memenuhi lebar kolom sebelum membungkusnya pada batas kata.
+
+<br> 2. Tambahkan widget variabel textSection ke dalam body seperti berikut:
+
+![Screenshot flutter_layout](images/10.png)

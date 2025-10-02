@@ -21,14 +21,14 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Wisata Gunung Bromo',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Batu, Malang, Indonesia',
+                  'Cemoro Lawang, Desa Ngadisari, Kec. Sukapura, Kabupaten Probolinggo, Jawa Timur. Indonesia',
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),
@@ -58,6 +58,23 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    // Praktikum 3: Implementasi text section
+    //Langkah 1: Buat widget textSection
+      Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Gunung Bromo adalah salah satu gunung berapi aktif yang terletak di Jawa Timur, Indonesia. '
+        'Dengan ketinggian 2.329 meter di atas permukaan laut, Bromo menjadi destinasi wisata populer '
+        'karena pemandangan sunrise-nya yang menakjubkan. Wisatawan dapat menyaksikan matahari terbit '
+        'dari Penanjakan dengan latar belakang Gunung Bromo, Batok, dan Semeru. '
+        'Kawasan Bromo-Tengger-Semeru juga merupakan habitat suku Tengger yang masih menjaga tradisi '
+        'dan budaya leluhur. Setiap tahun, masyarakat Tengger mengadakan upacara Yadnya Kasada sebagai '
+        'bentuk rasa syukur kepada Sang Hyang Widhi.\n\n'
+        'Meisy Nadia Nababan - 2341760031',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Meisy Nadia Nababan - 2341760031',
       home: Scaffold(
@@ -67,7 +84,8 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             titleSection,
-            buttonSection, // Langkah 3: Tambah button section ke body
+            buttonSection,  // Praktikum 2: Implementasi button row // Langkah 3: Tambah button section ke body
+            textSection, // Praktikum 3: Implementasi text section // Langkah 2: Tambahkan variabel text section ke body
           ],
         ),
       ),
